@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 .logo {
@@ -34,9 +35,10 @@
 
 .navbarcontainer {
   width: 50%;
-  height: 100%;
+  height: auto; /* Allow height to adjust based on content */
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap; /* Allow wrapping of links */
 }
 
 a {
@@ -88,4 +90,28 @@ a {
   border-color: rgb(17, 193, 158);
   background-color: rgb(26, 118, 160);
   font-size: 16px;
+}
+
+/* Responsive Styles */
+@media(max-width: 756px) {
+  .logo {
+    width: 100%;
+    text-align: center; 
+    margin-left: 0; 
+  }
+
+  .navbarcontainer {
+     display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center; 
+    text-align: center;
+    justify-items: center;
+    margin: 1px;
+  }
+
+  .button {
+    width: 100%; 
+    margin: 7px 0; 
+  }
 }
