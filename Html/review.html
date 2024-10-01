@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <link rel="stylesheet" href="../CSS/review.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
+
+    <title>Portfolio Home</title>
+  </head>
+  <body>
+    <!-- Placeholder for Header -->
+    <div id="header-placeholder"></div>
+
+    <main>
+      <div class="reviews">
+        <h2>What our Customer Say!!</h2>
+        <div class="review">
+          <div class="customer">
+            <img src="../media/logo.png" alt="#" />
+            <div class="comment">
+              <h5>Raju Karki</h5>
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+                aut sunt et illo ut consectetur animi nobis ducimus fugit!
+                Sapiente?"
+              </p>
+            </div>
+          </div>
+          <div class="customer">
+            <img src="../media/logo.png" alt="#" />
+            <div class="comment">
+              <h5>Raju Karki</h5>
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+                aut sunt et illo ut consectetur animi nobis ducimus fugit!
+                Sapiente?"
+              </p>
+            </div>
+          </div>
+          <div class="customer">
+            <img src="../media/logo.png" alt="#" />
+            <div class="comment">
+              <h5>Raju Karki</h5>
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+                aut sunt et illo ut consectetur animi nobis ducimus fugit!
+                Sapiente?"
+              </p>
+            </div>
+          </div>
+          <div class="customer">
+            <img src="../media/logo.png" alt="#" />
+            <div class="comment">
+              <h5>Raju Karki</h5>
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+                aut sunt et illo ut consectetur animi nobis ducimus fugit!
+                Sapiente?"
+              </p>
+            </div>
+          </div>
+          <div class="customer">
+            <img src="../media/logo.png" alt="#" />
+            <div class="comment">
+              <h5>Raju Karki</h5>
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+                aut sunt et illo ut consectetur animi nobis ducimus fugit!
+                Sapiente?"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

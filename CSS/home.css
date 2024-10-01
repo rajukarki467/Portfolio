@@ -1,3 +1,29 @@
+.text-container {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  font-size: 24px;
+  margin-bottom: 50px;
+  padding-left: 40wh;
+}
+
+.fade-text {
+  display: inline-block;
+  position: relative;
+}
+
+.text-role {
+  display: inline-block;
+  border-right: 2px solid black; /* Add a blinking cursor effect */
+  animation: blink-caret 0.8s step-end infinite;
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
 .main-container{
   width: 100%;
   display: flex;
@@ -12,6 +38,7 @@
   justify-items: center;
   margin: 20px 0;
 }
+
 .mainlogo img{
   width: 60px;
   height: 60px;
@@ -232,17 +259,14 @@ flex-wrap: wrap;
   align-items: center;
   padding:15px;
   margin:15px;
-  flex-wrap: wrap;
-
 }
 
 .customer img {
-  width:30%;
   height:80px;
   width:80px;
   border:2px solid black;
   border-radius: 50%;
-  margin-right: 20px;;
+  margin-right: 20px;
 
 }
 .comment{
@@ -283,7 +307,7 @@ font-style: italic;
   line-height:22px;
 }
 .forms{
-width:100%;
+width:65%;
 align-items: center;
 
 }
@@ -362,4 +386,7 @@ margin-bottom: 20px;
   .btns{
 padding:7px;
   }
+  .customer{
+flex-wrap: wrap;
+}
 }

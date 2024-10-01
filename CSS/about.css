@@ -1,0 +1,155 @@
+
+.main-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  justify-items: center;
+}
+
+.infos{
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.generalinfo p{
+  font-size: 16px;
+  font-weight: 500;
+  line-height:22px;
+}
+.academic{
+  margin-bottom:15px;
+}
+
+
+.profileimg img {
+  width:200px;
+  height:270px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+ .summary {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  flex-wrap: wrap;
+
+  }
+
+  .info-summary{
+    width: 100%;
+    background-color: rgb(212, 222, 222);
+    margin:20px;
+    padding:10px 200px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align:center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .tools{
+    width: 100%;
+    background-color:#dddddd;
+  }
+  .tools h2 ,.portfolio h2 , h2{
+    font-size:1.5rem;
+    font-weight:700;
+    margin: 25px 10px;
+    padding: 10px;
+
+  }
+
+  .tools p{
+    width:40%;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 25px 10px;
+  }
+
+  .tool-container{
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .icon img {
+    width:40%;
+    height:95%;  
+    border:1px transparent;
+  }
+
+  .icon p{
+    width:60%;
+    font-size: 14px;
+    font-weight:300;
+  }
+
+  .icon{
+    width:23%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border:2px solid rgb(179, 199, 203);
+    border-radius:10px;
+    background-color: white;
+    padding:10px;
+    margin:20px;
+  }
+
+  .icon:hover{
+    border-color:rgb(4, 206, 241);
+  }
+
+
+@media(max-width:768px){
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+  }
+.infos{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  justify-items: center;
+}
+.mainlogo ,.messagee ,.buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 5px;;
+  }
+  .messagee p {
+    padding:5px;
+    margin:5px;
+    display: block;
+    width:100%;
+  }
+  .profileimg img{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+  }
+  .projectimg img {
+    padding:0;
+  }
+
+
+}
