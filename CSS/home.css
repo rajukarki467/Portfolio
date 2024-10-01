@@ -1,0 +1,365 @@
+.main-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  justify-items: center;
+}
+
+.infos{
+  width: 50%;
+ justify-content: center;
+  justify-items: center;
+  margin: 20px 0;
+}
+.mainlogo img{
+  width: 60px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius:50%;
+  margin: 10px;
+}
+
+
+.mainlogo h5{
+text-align: center;
+font-size:18px;
+font-weight: 700;
+justify-content: center;
+justify-items: center;
+margin-top: 30px;
+
+}
+
+.mainlogo ,.messagee ,.buttons{
+height: auto;
+display: flex;
+justify-content: center;
+justify-items: center;
+margin-bottom: 20px;;
+}
+
+.messagee p {
+  margin:0 130px;
+  width:100%;
+ padding:20px 0;
+  border:2px solid rgb(103, 98, 98);
+  border-radius: 10px;
+}
+.messagee p:hover  {
+border-color: aqua;
+}
+
+.profileimg img {
+  width:200px;
+  height:270px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.buttons button{
+ padding:10px;
+ margin:15px;
+ border-radius: 5px;
+ font-size: 0.8rem;
+ background-color: rgb(28, 174, 207);
+}
+
+.buttons button:hover{
+  border-color: aqua;
+  font-size: 1rem;
+
+ }
+
+
+ .summary {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  flex-wrap: wrap;
+
+  }
+
+  .info-summary{
+    width: 100%;
+    background-color: rgb(212, 222, 222);
+    margin:20px;
+    padding:10px 200px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align:center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .tools{
+    width: 100%;
+    background-color:#dddddd;
+  }
+  .tools h2 ,.portfolio h2 , h2{
+    font-size:1.5rem;
+    font-weight:700;
+    margin: 25px 10px;
+    padding: 10px;
+
+  }
+
+  .tools p{
+    width:40%;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 25px 10px;
+  }
+
+  .tool-container{
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .icon img {
+    width:40%;
+    height:95%;  
+    border:1px transparent;
+  }
+
+  .icon p{
+    width:60%;
+    font-size: 14px;
+    font-weight:300;
+  }
+
+  .icon{
+    width:23%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border:2px solid rgb(179, 199, 203);
+    border-radius:10px;
+    background-color: white;
+    padding:10px;
+    margin:20px;
+  }
+
+  .icon:hover{
+    border-color:rgb(4, 206, 241);
+  }
+
+  .portfolio{
+    width:100%;
+    background-color:#e4e4e4;
+  }
+
+.carts{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+.cart {
+  width:25%;
+  border:1px solid rgb(84, 68, 68);
+  border-radius: 10px;
+  margin:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  flex-wrap: wrap;
+}
+.projectimg img {
+  width:90%;
+  height:150px;
+  align-items: center;
+  padding:10px;
+  border:transparent;
+  border-radius: 10px;
+}
+
+.projectimg{
+  width:95%;
+  background-size: cover;
+  align-items: center;
+  padding:10px;
+}
+
+.title{
+font-size: 1.2rem;
+font-weight: 700;
+margin-bottom:25px;
+}
+.buttonss{
+  width:100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom:15px;
+  flex-wrap: wrap;
+}
+
+.btns{
+  padding:10px;
+  font-size:12px;
+  font-weight: 400;
+  background-color: rgb(17, 222, 161);
+  border-radius: 10px;;
+}
+
+.reviews{
+  width:100%;
+  background-color:rgb(222, 214, 214);
+  padding-bottom: 15px;
+  height: auto;
+}
+
+.review{
+background-color:rgb(222, 214, 214);
+padding-bottom: 15px;
+display: flex;
+flex-wrap: wrap;
+}
+.customer{
+  width:25%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:15px;
+  margin:15px;
+  flex-wrap: wrap;
+
+}
+
+.customer img {
+  width:30%;
+  height:80px;
+  width:80px;
+  border:2px solid black;
+  border-radius: 50%;
+  margin-right: 20px;;
+
+}
+.comment{
+  width:65%;
+  margin-left: 5px;
+  align-items: center;
+}
+.comment h5{
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.comment p{
+font-size:12px;
+font-style: italic;
+}
+
+.contacts{
+  width:100%;
+  background-color:white;
+  margin: 10px 0;
+}
+
+.contact{
+  width:95%;
+  margin:10px;
+  padding:10px;
+  display:flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.discriptionss{
+  width:25%;
+}
+.discriptionss p{
+  width:90%;
+  line-height:22px;
+}
+.forms{
+width:100%;
+align-items: center;
+
+}
+.form{
+width: 100%;
+margin-bottom: 20px;
+}
+.form label{ 
+  display: block;
+}
+.form input , .form textarea{ 
+  width: 50%;
+  border:none;
+  border-bottom:1px solid rgb(67, 61, 61);
+  height:50px;
+}
+.form input:hover ,.form textarea:hover{ 
+  border-bottom:2px solid black;
+}
+
+.submit{
+  margin-left: 50px;
+  padding:15px 25px;
+  background-color:yellow;
+  border-radius: 10px;
+}
+
+@media(max-width:768px){
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+  }
+.infos{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  justify-items: center;
+}
+.mainlogo ,.messagee ,.buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 5px;;
+  }
+  .messagee p {
+    padding:5px;
+    margin:5px;
+    display: block;
+    width:100%;
+  }
+  .profileimg img{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+  }
+  .projectimg img {
+    padding:0;
+  }
+  .contact ,.contact .discriptionss,.contact .forms{
+    width:100%
+  }
+  .infoss{
+    margin-bottom: 10px;
+  }
+  .forms{
+    margin-top: 20px;
+  }
+  .btns{
+padding:7px;
+  }
+}
