@@ -16,28 +16,8 @@
     <main>
       <div class="main-container">
         <div class="infos">
-          <div class="generalinfo">
-            <p>Name:Raju Karki</p>
-            <p>Address:Changunarayan-4,bkt</p>
-            <p>Permanent Address:Likhu-04,Okhaldhunga</p>
-            <p>Profession:Computer Enginnering</p>
-          </div>
-          <div class="academicinfo">
-            <div class="academic">
-              <h3>Nepal Enginnering College</h3>
-              <p>Changinarayan-4,bhaktapur</p>
-              <p>2019-2024</p>
-            </div>
-            <div class="academic">
-              <h3>Oxbridge internationals College</h3>
-              <p>Lagankhel,Lalitpur</p>
-              <p>2016-2018</p>
-            </div>
-            <div class="academic">
-              <h3>Gamvir Samudra Setu H.S.S.</h3>
-              <p>Imadol,Lalitpur</p>
-            </div>
-          </div>
+          <div class="js-general-info"></div>
+          <div class="academicinfo js-academic-info"></div>
         </div>
         <div class="profileimg">
           <img src="../media/profile.jpg" alt="#" />
@@ -47,11 +27,11 @@
       <div class="summary">
         <div class="info-summary">
           <div class="infoss">
-            <p>3+</p>
+            <h1>3+</h1>
             <p>Projects done</p>
           </div>
           <div class="infoss">
-            <p>Fresher</p>
+            <h1>Fresher</h1>
             <p>No Experience</p>
           </div>
         </div>
@@ -68,37 +48,13 @@
           applications. By combining design and coding knowledge, I am working
           towards becoming proficient in modern software development practices.
         </p>
-        <div class="tool-container">
-          <div class="icon">
-            <img src="../media/logo.png" alt="#" />
-            <p>Figma Design Tools</p>
-          </div>
-          <div class="icon">
-            <img src="../media/logo.png" alt="#" />
-            <p>Figma Design Tools</p>
-          </div>
-          <div class="icon">
-            <img src="../media/logo.png" alt="#" />
-            <p>Figma Design Tools</p>
-          </div>
-          <div class="icon">
-            <img src="../media/logo.png" alt="#" />
-            <p>Figma Design Tools</p>
-          </div>
-          <div class="icon">
-            <img src="../media/logo.png" alt="#" />
-            <p>Figma Design Tools</p>
-          </div>
-          <div class="icon">
-            <img src="../media/logo.png" alt="#" />
-            <p>Figma Design Tools</p>
-          </div>
-        </div>
+        <div class="tool-container js-tools-info"></div>
       </div>
     </main>
 
     <div id="footer-placeholder"></div>
 
+    <script type="module" src="../JavaScripts/about.js"></script>
     <script>
       fetch("header.html")
         .then((response) => response.text())

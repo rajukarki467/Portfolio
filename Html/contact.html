@@ -14,36 +14,40 @@
     <div id="header-placeholder"></div>
 
     <main>
-    <div class="contacts">
-      <h2>Contact me for Collaboration.</h2>
-      <div class="contact">
-        <div class="discriptionss">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
-            rerum consectetur a nihil commodi, debitis laudantium distinctio
-            itaque atque amet, ab hic praesentium odio est fugit sequi nesciunt
-            autem. Consequatur!
-          </p>
-        </div>
-        <div class="forms">
-          <form action="post" method="post">
-            <div class="form">
-              <label for="name">Name</label>
-              <input type="text" required />
+      <div class="contacts">
+        <h2>Contact me for Collaboration.</h2>
+        <div class="contact">
+          <div class="discriptionss">
+            <p>
+              If you are interested in collaborating with me, please send a
+              message using this form. I will respond as soon as possible.
+              Together, we can create great memories and successful projects.
+            </p>
+          </div>
+          <div class="forms">
+            <form id="contactForm">
+              <div class="form">
+                <label for="name">Name</label>
+                <input type="text" required />
+              </div>
+              <div class="form">
+                <label for="email">Email Address</label>
+                <input type="text" required />
+              </div>
+              <div class="form">
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+              </div>
+              <button type="submit" class="submit">Submit</button>
+            </form>
+            <div id="successMessage" style="display: none">
+              <p>Your message has been sent successfully! ✅</p>
             </div>
-            <div class="form">
-              <label for="email">Email Address</label>
-              <input type="text" required />
-            </div>
-            <div class="form">
-              <label for="message">Message</label>
-              <textarea name="message" id="message"></textarea>
-            </div>
-            <button type="submit" class="submit">Submit</button>
-          </form>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
+
     <div id="footer-placeholder"></div>
 
     <script>

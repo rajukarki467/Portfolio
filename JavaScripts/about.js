@@ -1,34 +1,40 @@
-const roles = ["Computer Engineer", "Frontend Developer", "Backend Developer", "Fullstack Developer"];
-let index = 0;
-let currentText = "";
-const textRoleElement = document.querySelector('.text-role');
+import { personal,academic ,tools } from "../data/personal-info.js";
 
-function typeText(text, i = 0) {
-    if (i < text.length) {
-        currentText += text[i];
-        textRoleElement.textContent = currentText;
-        setTimeout(() => typeText(text, i + 1), 100); // Adjust typing speed here
-    }
-}
+let personalHTML = "";
 
-function eraseText(i) {
-    if (i >= 0) {
-        currentText = currentText.slice(0, i);
-        textRoleElement.textContent = currentText;
-        setTimeout(() => eraseText(i - 1), 100); // Adjust erasing speed here
-    } else {
-        // Start typing the next role after erasing
-        index = (index + 1) % roles.length;
-        setTimeout(() => typeText(roles[index]), 300);
-    }
-}
+personal.forEach((person) =>{
+ personalHTML += `
+           <div class="generalinfo">
+            <p>Name:${person.name}</p>
+            <p>Address:${person.temporaryAddress}</p>
+            <p>Permanent Addres:${person.permanentAddress}</p>
+            <p>Profession:${person.profession}</p>
+            <p>Email:${person.email}</p>
+          </div>
+ `;
+});
+document.querySelector('.js-general-info').innerHTML = personalHTML;
 
-function showText() {
-    // Start erasing the current text
-    setTimeout(() => eraseText(currentText.length), 2000); // Wait 2 seconds before starting to erase
-}
+let academicHTML = "";
+academic.forEach((academic)=> {
+academicHTML += `
+            <div class="academic">
+              <h3>${academic.name}</h3>
+              <p>${academic.Address}</p>
+              <p>${academic.duration} , ${academic.level}</p>
+            </div>
+`;
+});
+document.querySelector('.js-academic-info').innerHTML =academicHTML;
 
-// Initialize by typing the first role
-typeText(roles[index]);
-// Repeat the cycle
-setInterval(showText, 5000); // Adjust timing as needed
+
+let toolsHTML = "";
+tools.forEach((tool)=> {
+toolsHTML += `
+        <div class="icon">
+            <img src=${tool.src} alt="#" />
+            <p>${tool.name}</p>
+          </div>
+`;
+});
+document.querySelector('.js-tools-info').innerHTML =toolsHTML;

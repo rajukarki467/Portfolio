@@ -82,21 +82,35 @@ border-color: aqua;
   height:270px;
   border: 2px solid black;
   border-radius: 10px;
+  
 }
 
-.buttons button{
- padding:10px;
- margin:15px;
- border-radius: 5px;
- font-size: 0.8rem;
- background-color: rgb(28, 174, 207);
+.tools{
+  width: 100%;
+  background-color:#dddddd;
+}
+.tools h2 ,.portfolio h2 , h2{
+  font-size:1.5rem;
+  font-weight:700;
+  margin: 25px 10px;
+  padding: 10px;
+
 }
 
-.buttons button:hover{
-  border-color: aqua;
-  font-size: 1rem;
+.tools p{
+  width:95%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 25px 10px;
+  color:rgb(67, 63, 63);
+}
 
- }
+.tool-container{
+  width:100%;
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
 
  .summary {
@@ -122,32 +136,6 @@ border-color: aqua;
     flex-wrap: wrap;
   }
   
-  .tools{
-    width: 100%;
-    background-color:#dddddd;
-  }
-  .tools h2 ,.portfolio h2 , h2{
-    font-size:1.5rem;
-    font-weight:700;
-    margin: 25px 10px;
-    padding: 10px;
-
-  }
-
-  .tools p{
-    width:40%;
-    font-size: 1rem;
-    font-weight: 500;
-    margin: 25px 10px;
-  }
-
-  .tool-container{
-    width:100%;
-    display:flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-
   .icon img {
     width:40%;
     height:95%;  
@@ -176,164 +164,25 @@ border-color: aqua;
     border-color:rgb(4, 206, 241);
   }
 
-  .portfolio{
-    width:100%;
-    background-color:#e4e4e4;
-  }
 
-.carts{
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  justify-items: center;
-  flex-wrap: wrap;
+.button {
+  background-color: rgb(112, 171, 198);
+  width: 7rem;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none; 
+  color: #fff; 
+  cursor: pointer; 
+  transition: background-color 0.3s, font-size 0.3s; 
 }
-.cart {
-  width:25%;
-  border:1px solid rgb(84, 68, 68);
-  border-radius: 10px;
-  margin:20px;
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items:center;
-  flex-wrap: wrap;
-}
-.projectimg img {
-  width:90%;
-  height:150px;
-  align-items: center;
-  padding:10px;
-  border:transparent;
-  border-radius: 10px;
+.button:hover {
+  border-color: rgb(17, 193, 158);
+  width:8rem;
+  background-color: rgb(26, 118, 160);
+  font-size: 16px;
 }
 
-.projectimg{
-  width:95%;
-  background-size: cover;
-  align-items: center;
-  padding:10px;
-}
-
-.title{
-font-size: 1.2rem;
-font-weight: 700;
-margin-bottom:25px;
-}
-.buttonss{
-  width:100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-bottom:15px;
-  flex-wrap: wrap;
-}
-
-.btns{
-  padding:10px;
-  font-size:12px;
-  font-weight: 400;
-  background-color: rgb(17, 222, 161);
-  border-radius: 10px;;
-}
-
-.reviews{
-  width:100%;
-  background-color:rgb(222, 214, 214);
-  padding-bottom: 15px;
-  height: auto;
-}
-
-.review{
-background-color:rgb(222, 214, 214);
-padding-bottom: 15px;
-display: flex;
-flex-wrap: wrap;
-}
-.customer{
-  width:25%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding:15px;
-  margin:15px;
-}
-
-.customer img {
-  height:80px;
-  width:80px;
-  border:2px solid black;
-  border-radius: 50%;
-  margin-right: 20px;
-
-}
-.comment{
-  width:65%;
-  margin-left: 5px;
-  align-items: center;
-}
-.comment h5{
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-.comment p{
-font-size:12px;
-font-style: italic;
-}
-
-.contacts{
-  width:100%;
-  background-color:white;
-  margin: 10px 0;
-}
-
-.contact{
-  width:95%;
-  margin:10px;
-  padding:10px;
-  display:flex;
-  justify-content: space-evenly;
-  justify-items: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.discriptionss{
-  width:25%;
-}
-.discriptionss p{
-  width:90%;
-  line-height:22px;
-}
-.forms{
-width:65%;
-align-items: center;
-
-}
-.form{
-width: 100%;
-margin-bottom: 20px;
-}
-.form label{ 
-  display: block;
-}
-.form input , .form textarea{ 
-  width: 50%;
-  border:none;
-  border-bottom:1px solid rgb(67, 61, 61);
-  height:50px;
-}
-.form input:hover ,.form textarea:hover{ 
-  border-bottom:2px solid black;
-}
-
-.submit{
-  margin-left: 50px;
-  padding:15px 25px;
-  background-color:yellow;
-  border-radius: 10px;
-}
 
 @media(max-width:768px){
   .main-container{
@@ -374,19 +223,4 @@ margin-bottom: 20px;
   .projectimg img {
     padding:0;
   }
-  .contact ,.contact .discriptionss,.contact .forms{
-    width:100%
-  }
-  .infoss{
-    margin-bottom: 10px;
-  }
-  .forms{
-    margin-top: 20px;
-  }
-  .btns{
-padding:7px;
-  }
-  .customer{
-flex-wrap: wrap;
-}
 }
