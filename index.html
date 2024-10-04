@@ -14,7 +14,21 @@
   </head>
   <body>
     <!-- Placeholder for Header -->
-    <div id="header-placeholder"></div>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="/index.html"> <img src="../media/logo.png" alt="Logo" /></a>
+        </div>
+        <div class="navbarcontainer">
+          <a href="../index.html">Home</a>
+          <a href="/html/about.html">About</a>
+          <a href="/html/work.html">Work</a>
+        </div>
+        <a href="/html/contact.html"
+          ><button type="submit" class="button">Contact Me</button></a
+        >
+      </div>
+    </header>
 
     <main>
       <div class="text-container">
@@ -107,21 +121,38 @@
       </div>
     </main>
 
-    <div id="footer-placeholder"></div>
+    <footer>
+      <div class="footercontainer">
+        <div class="footlink">
+          <div class="message">
+            <h4>Let's Work Together Today!</h4>
+            <a href="#">Start Projects</a>
+          </div>
+          <div class="footermap">
+            <p>Sitemap</p>
+            <a href="./index.html">Home</a>
+            <a href="/html/about.html">About</a>
+            <a href="/html/work.html">Work</a>
+            <a href="/html/contact.html">Contact me</a>
+          </div>
+          <div class="sociallink">
+            <p>Social Media</p>
+            <a href="https://github.com/rajukarki467" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/raju-karki-12a554308"
+              >Linkedln</a
+            >
+            <a href="#">Twitter</a>
+            <a href="#">Instragram</a>
+            <a href="#">Codepan</a>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>@copyright,2024 code with Raju Karki!!</p>
+        </div>
+      </div>
+    </footer>
+
     <script src="./JavaScripts/home.js" type="module"></script>
     <script src="./JavaScripts/work.js" type="module"></script>
-    <script defer>
-      fetch("./html/header.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("header-placeholder").innerHTML = data;
-        });
-
-      fetch("./html/footer.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("footer-placeholder").innerHTML = data;
-        });
-    </script>
   </body>
 </html>
