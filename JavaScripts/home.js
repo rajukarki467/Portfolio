@@ -1,4 +1,4 @@
-import { personal,academic ,tools } from "../data/personal-info.js";
+import { personal,academic ,tools } from "/data/personal-info.js";
 
 const roles =["Computer Engineer","Frontend Developer","Backend Developer","FullStack Developer"];
 let index = 0;

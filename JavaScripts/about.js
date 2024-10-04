@@ -1,4 +1,4 @@
-import { personal,academic ,tools } from "../data/personal-info.js";
+import { personal,academic ,tools } from "/data/personal-info.js";
 
 let personalHTML = "";
 

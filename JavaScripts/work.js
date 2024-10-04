@@ -1,4 +1,4 @@
-import { work } from "../data/workdata.js";
+import { work } from "/data/workdata.js";
 
 let workHTML = '';
 
